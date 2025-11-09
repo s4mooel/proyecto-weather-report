@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Report</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  
+  <div class="app">
+    <header>
+      <h1>🌤️ Weather Report</h1>
+      <div class="search">
+        <div class="search-input-container">
+          <input type="text" id="cityInput" placeholder="Ingresa una ciudad..." autocomplete="off" />
+          <div id="suggestions" class="suggestions hidden"></div>
+        </div>
+        <button id="searchBtn">🔍 Buscar</button>
+        <button id="locationBtn" title="Obtener mi ubicación">📍</button>
+        <button id="themeToggle">🌙</button>
+      </div>
+    </header>
+
+    <section id="weatherInfo" class="hidden">
+      <div class="location-info">
+        <h2 id="cityName"></h2>
+        <p id="localTime" class="local-time"></p>
+      </div>
+
+      <div class="main-weather">
+        <div class="weather-icon-container">
+          <img id="icon" src="" alt="weather icon" class="weather-icon" />
+        </div>
+        <div class="temperature-display">
+          <p id="temperature" class="temperature"></p>
+          <p id="description" class="description"></p>
+          <p id="feelsLike" class="feels-like"></p>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="detail-card">
+          <div class="detail-icon">💧</div>
+          <div class="detail-label">Humedad</div>
+          <p id="humidity" class="detail-value"></p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🌬️</div>
+          <div class="detail-label">Viento</div>
+          <p id="wind" class="detail-value"></p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🔽</div>
+          <div class="detail-label">Presión</div>
+          <p id="pressure" class="detail-value"></p>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">👁️</div>
+          <div class="detail-label">Visibilidad</div>
+          <p id="visibility" class="detail-value"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="forecast" class="hidden">
+      <h3>📅 Pronóstico de 5 días</h3>
+      <div id="forecastContainer"></div>
+      
+      <div class="chart-container">
+        <canvas id="tempChart"></canvas>
+      </div>
+    </section>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Cargando datos del clima...</p>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+
+    <footer>
+      <p>Desarrollado por <strong>Samuel Ibañez</strong> © 2025</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
