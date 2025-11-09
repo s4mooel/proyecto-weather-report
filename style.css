@@ -18,34 +18,34 @@ body {
   padding: 20px;
 }
 
-/* Partículas animadas */
-.particles {
+/* Mesh Gradient Animado - Efecto Moderno */
+body::before {
+  content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 119, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(138, 201, 255, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 90% 30%, rgba(75, 255, 226, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 10% 80%, rgba(255, 200, 124, 0.3) 0%, transparent 50%);
+  animation: meshMove 20s ease-in-out infinite;
   pointer-events: none;
   z-index: 0;
 }
 
-.particle {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  animation: float 20s infinite;
-}
-
-@keyframes float {
-  0%, 100% { 
-    transform: translateY(0) translateX(0); 
-    opacity: 0; 
+@keyframes meshMove {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
   }
-  10% { opacity: 1; }
-  90% { opacity: 1; }
-  100% { 
-    transform: translateY(-100vh) translateX(100px); 
-    opacity: 0; 
+  33% {
+    transform: translate(30px, -50px) rotate(120deg);
+  }
+  66% {
+    transform: translate(-20px, 20px) rotate(240deg);
   }
 }
 

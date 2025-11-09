@@ -13,24 +13,6 @@ let tempChart = null;
 let debounceTimer = null;
 let currentSuggestionIndex = -1;
 
-// Crear partículas flotantes
-function createParticles() {
-  const container = document.getElementById('particles');
-  for (let i = 0; i < 15; i++) {
-    const particle = document.createElement('div');
-    particle.className = 'particle';
-    const size = Math.random() * 60 + 20;
-    particle.style.width = size + 'px';
-    particle.style.height = size + 'px';
-    particle.style.left = Math.random() * 100 + '%';
-    particle.style.animationDelay = Math.random() * 20 + 's';
-    particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
-    container.appendChild(particle);
-  }
-}
-
-createParticles();
-
 // Búsqueda con botón
 searchBtn.addEventListener("click", () => {
   const city = cityInput.value.trim();
