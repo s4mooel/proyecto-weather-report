@@ -2,7 +2,7 @@
 
 Una aplicación web moderna que muestra el clima actual y el pronóstico de los próximos días, desarrollada con **HTML**, **CSS** y **JavaScript** usando la API de **OpenWeatherMap**.
 
-![Vista previa del proyecto](https://youtu.be/TCzGKNNnWrA)
+[Vista previa del proyecto](https://youtu.be/TCzGKNNnWrA)
 
 ---
 
