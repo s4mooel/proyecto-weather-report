@@ -6,7 +6,7 @@ Una aplicación web moderna que muestra el clima actual y el pronóstico de los 
 
 ---
 
-## 🚀 Características principales
+##  Características principales
 
 -  **Búsqueda por ciudad:** consulta el clima en cualquier parte del mundo.  
 -  **Ubicación actual:** usa la geolocalización del dispositivo para mostrar el clima donde te encuentras.  
@@ -17,7 +17,7 @@ Una aplicación web moderna que muestra el clima actual y el pronóstico de los 
 
 ---
 
-## 🧰 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
@@ -27,7 +27,7 @@ Una aplicación web moderna que muestra el clima actual y el pronóstico de los 
 
 ---
 
-## ⚙️ Instalación y uso
+##  Instalación y uso
 
 1. Clona el repositorio:
    ```bash
