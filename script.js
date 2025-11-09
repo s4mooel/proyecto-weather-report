@@ -37,7 +37,7 @@ cityInput.addEventListener("keypress", (e) => {
 cityInput.addEventListener("input", (e) => {
   const query = e.target.value.trim();
   
-  // Limpiar timer anterior
+  
   clearTimeout(debounceTimer);
   
   if (query.length < 2) {
