@@ -13,7 +13,7 @@ Una aplicación web moderna que muestra el clima actual y el pronóstico de los 
 -  **Modo oscuro y claro:** cambia el tema con un solo clic.  
 -  **Autocompletado inteligente:** sugerencias de ciudades mientras escribes.  
 -  **Pronóstico de 5 días:** incluye gráficos de temperatura creados con **Chart.js**.  
--  **Animaciones y efectos visuales:** interfaz moderna con partículas flotantes y transiciones suaves.
+-  **Animaciones y efectos visuales:** interfaz moderna con transiciones suaves.
 
 ---
 
