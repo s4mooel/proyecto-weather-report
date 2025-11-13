@@ -19,7 +19,10 @@ Una aplicación web moderna que muestra el clima actual y el pronóstico de los 
 
 
 ##  Instalación y uso
-
-1. Clona el repositorio:
+1. Agrega tu API Key de OpenWeatherMap en el Script:
+   ```javascript
+   const apiKey = "APIKEY";
+   
+2. Clona el repositorio:
    ```bash
    git clone https://github.com/s4mooel/proyecto-weather-report.git
